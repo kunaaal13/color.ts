@@ -1,28 +1,28 @@
 {
-  "name": "color.ts",
-  "version": "0.1.0",
-  "description": "A comprehensive TypeScript library for color manipulation and conversion",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "format": "biome format --write .",
-    "lint": "biome check .",
-    "lint:fix": "biome check --apply ."
-  },
-  "keywords": [
-    "color",
-    "typescript",
-    "conversion",
-    "manipulation",
-    "rgb",
-    "hsl",
-    "hex"
-  ],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@biomejs/biome": "1.5.3",
-    "typescript": "^5.3.3"
-  }
+	"name": "color.ts",
+	"version": "0.1.0",
+	"description": "A comprehensive TypeScript library for color manipulation and conversion",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"format": "biome format --write .",
+		"lint": "biome check .",
+		"lint:fix": "biome check --apply ."
+	},
+	"keywords": [
+		"color",
+		"typescript",
+		"conversion",
+		"manipulation",
+		"rgb",
+		"hsl",
+		"hex"
+	],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "1.5.3",
+		"typescript": "^5.3.3"
+	}
 }
