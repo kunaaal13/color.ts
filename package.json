@@ -5,6 +5,7 @@
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
+		"dev": "node src/index.ts",
 		"build": "tsc",
 		"format": "biome format --write .",
 		"lint": "biome check .",

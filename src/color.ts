@@ -1,9 +1,6 @@
 import { RGB } from './types';
 import { parseColor, rgbToHSL, rgbToHex } from './utils';
 
-/**
- * Color class: This class is used to create a color object. It is the main class of the package.
- */
 class Color {
 	// In the core of the package, we use the RGB color model, any other color model is converted to RGB and stored in this property
 	private values: RGB;
@@ -84,3 +81,18 @@ class Color {
 }
 
 export default Color;
+
+export function formatColor(color: string, format: 'hex' | 'rgb' | 'hsl') {
+	const colorObject = new Color(parseColor(color));
+
+	switch (format) {
+		case 'hex':
+			return colorObject.toHex();
+		case 'rgb':
+			return colorObject.toRGB();
+		case 'hsl':
+			return colorObject.toHSL();
+		default:
+			throw new Error(`Invalid format: ${format}`);
+	}
+}
