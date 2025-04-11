@@ -23,3 +23,5 @@ class Color {
 }
 
 export default Color;
+
+// Hellow
